@@ -1,7 +1,6 @@
-<div class="container-fluid">
-	<div class="jumbotron">
-		<h2>Nós temos hoje <?php echo $total_anuncios; ?> anúncios.</h2>
-		<p>E mais de <?php echo $total_usuarios; ?> usuários cadastrados.</p>
+<div class="jumbotron">
+		<h2>Reclame JÁ! <?php echo $total_anuncios; ?> </h2>
+		<p> <?php echo $total_usuarios; ?> usuários cadastrados.</p>
 	</div>
 
 	<div class="row">
@@ -30,12 +29,12 @@
 				</div>
 
 				<div class="form-group">
-					<label for="estado">Estado de Conservação:</label>
+					<label for="estado">Estado do produto:</label>
 					<select id="estado" name="filtros[estado]" class="form-control">
 						<option></option>
 						<option value="0" <?php echo ($filtros['estado']=='0')?'selected="selected"':''; ?>>Ruim</option>
 						<option value="1" <?php echo ($filtros['estado']=='1')?'selected="selected"':''; ?>>Bom</option>
-						<option value="2" <?php echo ($filtros['estado']=='2')?'selected="selected"':''; ?>>Ótimo</option>
+						<option value="2" <?php echo ($filtros['estado']=='2')?'selected="selected"':''; ?>>Falso</option>
 					</select>
 				</div>
 
